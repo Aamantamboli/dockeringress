@@ -10,10 +10,8 @@ RUN rm -rf /var/www/html/*
 
 WORKDIR /var/www/html/
 
-RUN mkdir /var/www/html/traffic
+COPY ./ /var/www/html/
 
-COPY ./ /var/www/html/traffic/
-
-EXPOSE 80
+EXPOSE 86
     
 CMD ["apachectl", "-D", "FOREGROUND"]

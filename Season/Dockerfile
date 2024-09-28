@@ -10,10 +10,8 @@ RUN rm -rf /var/www/html/*
 
 WORKDIR /var/www/html/
 
-RUN mkdir /var/www/html/season
+COPY ./ /var/www/html/
 
-COPY ./ /var/www/html/season/
-
-EXPOSE 80
+EXPOSE 84
     
 CMD ["apachectl", "-D", "FOREGROUND"]

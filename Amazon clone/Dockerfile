@@ -10,9 +10,7 @@ RUN rm -rf /var/www/html/*
 
 WORKDIR /var/www/html/
 
-RUN mkdir /var/www/html/amazon
-
-COPY ./ /var/www/html/amazon/
+COPY ./ /var/www/html/
 
 EXPOSE 80
     
