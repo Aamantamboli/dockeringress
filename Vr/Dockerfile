@@ -12,6 +12,6 @@ WORKDIR /var/www/html/
 
 COPY ./ /var/www/html/
 
-EXPOSE 87
+EXPOSE 88
     
 CMD ["apachectl", "-D", "FOREGROUND"]
